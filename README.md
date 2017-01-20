@@ -18,30 +18,30 @@ How to use
 
 Install it:
 
-		git clone https://github.com/z0noxz/endrilo
-		cd endrilo
-        sudo ./setup.py install
+	git clone https://github.com/z0noxz/endrilo
+	cd endrilo
+	sudo ./setup.py install
 
 Encode your message with any of the following ways:
 
-        endrilo --encode "my secret message"
-		echo -n "my secret message" | endrilo --encode-pipe
-		endrilo --encode-file my-secret-file
-		cat my-secret-file | endrilo --encode-pipe
+	endrilo --encode "my secret message"
+	echo -n "my secret message" | endrilo --encode-pipe
+	endrilo --encode-file my-secret-file
+	cat my-secret-file | endrilo --encode-pipe
 
 Decode your message with any if the following ways:
 
-        endrilo --decode "SBQloiNpSSJFk6IlibRkjhJFSSJFWqQlVCYliRQ="
-		echo -n "SBQloiNpSSJFk6IlibRkjhJFSSJFWqQlVCYliRQ=" | endrilo --decode-pipe
-		endrilo --decode-file my-encoded-file
-		cat my-encoded-file | endrilo --decode-pipe
+	endrilo --decode "SBQloiNpSSJFk6IlibRkjhJFSSJFWqQlVCYliRQ="
+	echo -n "SBQloiNpSSJFk6IlibRkjhJFSSJFWqQlVCYliRQ=" | endrilo --decode-pipe
+	endrilo --decode-file my-encoded-file
+	cat my-encoded-file | endrilo --decode-pipe
 
 A password can be specified to enhance security:
 
-        endrilo --encode "my secret message" --password "lamepassword"
-        endrilo --decode "MDiXIdE17GRFxehlGVd0A4BIOvk5BqwLOJA1rig=" --password "lamepassword"
+	endrilo --encode "my secret message" --password "lamepassword"
+	endrilo --decode "MDiXIdE17GRFxehlGVd0A4BIOvk5BqwLOJA1rig=" --password "lamepassword"
 
 Compression can be used for smaller storage:
 
-        endrilo --encode "my secret message" --password "lamepassword" --gzip
-        endrilo --decode "H4sIABxvglgC/zOwmK540fRNiuvRF6mS4SXMDR5WPy3Z1nBbTDBdpwEACDQlwB0AAAA=" --password "lamepassword" --gzip
+	endrilo --encode "my secret message" --password "lamepassword" --gzip
+	endrilo --decode "H4sIABxvglgC/zOwmK540fRNiuvRF6mS4SXMDR5WPy3Z1nBbTDBdpwEACDQlwB0AAAA=" --password "lamepassword" --gzip
