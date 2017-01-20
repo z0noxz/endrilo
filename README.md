@@ -22,14 +22,14 @@ Install it:
 	cd endrilo
 	sudo ./setup.py install
 
-Encode your message with any of the following ways:
+Encode your message in any of the following ways:
 
 	endrilo --encode "my secret message"
 	echo -n "my secret message" | endrilo --encode-pipe
 	endrilo --encode-file my-secret-file
 	cat my-secret-file | endrilo --encode-pipe
 
-Decode your message with any if the following ways:
+Decode your message in any of the following ways:
 
 	endrilo --decode "SBQloiNpSSJFk6IlibRkjhJFSSJFWqQlVCYliRQ="
 	echo -n "SBQloiNpSSJFk6IlibRkjhJFSSJFWqQlVCYliRQ=" | endrilo --decode-pipe
