@@ -1,0 +1,3 @@
+include bin/endrilo
+recursive-include endrilo *.py
+include README.md
